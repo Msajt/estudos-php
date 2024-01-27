@@ -1,0 +1,8 @@
+Problemas encontrados no programa no nível 1
+
+- Criamos muitos arquivos para o funcionamento
+- HTML misturado com o PHP
+- Manipulação dos dados está espalhado no script
+- O programa só funciona com o 'postgres'
+- Não possui uma boa manutenção por está misturado
+- Segurança

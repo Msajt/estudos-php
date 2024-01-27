@@ -1,0 +1,64 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #212121; /* Cor de fundo escura */
+    color: #fff;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sutil sombra */
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #e0e0e0; /* Cor da borda mais clara */
+    color: #333; /* Cor do texto */
+}
+
+th {
+    background-color: #2196F3; /* Azul do Google Material */
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #f5f5f5; /* Cor de fundo mais clara no hover */
+    color: #333;
+}
+
+td {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #e91e63; /* Cor de link rosa do Google Material */
+}
+
+a:hover {
+    color: #c2185b; /* Cor de link rosa mais escura no hover */
+}
+
+button {
+    background-color: #e91e63; /* Cor de botão rosa do Google Material */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #c2185b; /* Cor de botão rosa mais escura no hover */
+}

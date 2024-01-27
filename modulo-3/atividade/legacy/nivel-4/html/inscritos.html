@@ -1,0 +1,36 @@
+<!--
+    ! Lista dos inscritos na palestra
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/palestra.css">
+    <title>{titulo}</title>
+</head>
+
+<body>
+    <table border=1>
+        <!-- Cabeçalho da tabela -->
+        <thead>
+            <tr>
+                <th colspan='4'> {titulo} ( {palestrante} ) </th>
+           </tr>
+           <!-- Elementos da lista da palestra -->
+           <tr>
+            <td>Nome</td>
+            <td>Telefone</td>
+            <td>Email</td>
+            <td>Curso</td>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Inscritos -->
+        {inscritosDisponiveis}
+    </tbody>
+</table>
+</body>
+
+</html>

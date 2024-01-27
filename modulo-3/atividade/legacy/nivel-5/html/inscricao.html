@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/inscricao.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h4>Inscrição da palestra</h4>
+    <!-- 
+        ? Ao invés de trocar para outro arquivo, basta inserir uma 'action'
+    -->
+    <form action="inscricao.php?action=save" method="POST" enctype="multipart/form-data">
+        <!-- 
+            * Verificar a entrada usando a tag 'value'
+        -->
+        <label>Nome</label>
+        <input type="text" name='nome' value="{nome}">
+        <label>Email</label>
+        <input type="text" name='email' value="{email}">
+        <label>Curso</label>
+        <input type="text" name='curso' value="{curso}">
+        <label>Telefone</label>
+        <input type="text" name='telefone' value="{telefone}">
+        <label>Palestra</label>
+        <select name="id_palestra">
+            <!-- 
+                ? Código php para listagem de palestras 
+            -->
+            {palestras}
+        </select>
+        <input type="submit">
+    </form>
+</body>
+
+</html>

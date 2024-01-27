@@ -1,0 +1,80 @@
+# Repita o método de 7 passos do estruturado à orientação a objetos com o seguinte cenário: 
+    - Desenvolva uma tela para exibir as palestras (grade) do evento de um determinado dia.
+    - Pode ser uma abaixo da outra.
+    - Esta tela deverá ter um botão para selecionar a palestra e gravar a inscrição.
+
+    -> Tabela 'palestras'
+        - id
+        - titulo
+        - palestrante
+        - horario
+    -> Tabela 'inscricoes'
+        - id
+        - id-palestra
+        - nome
+        - telefone
+        - email
+        - curso
+
+    |=========================================|
+    |            # PALESTRAS #                |
+    |=========================================|
+    | palestra 1 ........... || selecionar || |
+    | palestra 2 ........... || selecionar || | 
+    | palestra 3 ........... || selecionar || |
+    | palestra x ........... || selecionar || |
+    |     .             .           .         |
+    |     .             .           .         |
+    |     .             .           .         |
+    |=========================================|
+                                 |============|
+                                 | inscreva-se|
+                                 |============| 
+
+    |=================================|
+    |         # PALESTRA X #          |
+    |=================================|
+    | Nome | Telefone | Email | Curso |
+    |   .       .         .       .   |
+    |   .       .         .       .   |
+    |   .       .         .       .   |
+    |   .       .         .       .   |
+   
+    |=========================|
+    |      # INSCRIÇÃO #      |
+    |=========================|
+    | Nome: ................. |
+    | Email: ................ |               
+    | Curso: ................ |               
+    | Telefone: ............. |                
+    | Palestra: | select \/ | |
+    |=========================|
+                 |============|
+                 |   gravar   |
+                 |============|
+
+= OK =  1. Procedural, um script por ação: Nesta etapa, construimos um programa bastante
+        básico, estruturado, com PHP, HTML e SQL misturados, onde cada ação (incluir,
+        editar, excluir, listar) é um script separado.
+= OK =  2. Agrupando ações comuns em scripts: Nesta etapa, reunimos ações comuns em
+        torno de menos scripts (incluir junto com editar, listar junto com excluir), e
+        passamos a trabalhar com o conceito de script e ação realizada.
+= OK =  3. Separando o HTML com micro templates: Nesta etapa, trabalhamos com o HTML em
+        arquivos a parte, chamados de templates. Com isso, separamos o visual do resto do
+        programa.
+= OK =  4. Separando o acesso a dados com funções. Nesta etapa, separamos todas as funções
+        que mexem com banco de dados em um arquivo (ainda estruturado), contendo uma
+        série de funções (insere_pessoa, exclui_pessoa). Separamos as funções de
+        persistência do programa principal.
+= OK =  5. Separando o acesso a dados com classes. Nesta etapa, transformamos as funções
+        de acesso à base de dados em classes de modelo com métodos de manipulação de
+        dados. Introduzimos a biblioteca PDO e começamos a trabalhar com exceções.
+= OK =  6. Melhorando as conexões e a segurança. Nesta etapa, refatoramos nossa classe de
+        banco de dados para esta não apresentar mais os dados de conexão (banco,
+        usuário, e senha) explicitamente no código, e aumentamos a segurança ao trabalhar
+        com prepared statements para evitar ataques como SQL injection.
+        7. Transformando páginas em classes de controle. Nesta etapa, refatoramos nossos
+        programas principais, que ainda são estruturados, e transformamos estes em
+        classes de controle, onde cada ação do usuário é identificada por um método.
+        Também alteramos o fluxo da aplicação, e agora temos um único arquivo
+        (index.php) por onde passam todas as rotas.

@@ -1,0 +1,19 @@
+<!-- //* Inserindo os dados no formato HTML -->
+<tr>
+    <!-- //? Chamando a action de editar o usuário -->
+    <td>
+        <a href='index.php?class=PessoaForm&method=edit&id={id}'>
+            <img src='img/edit.svg' style='width:17px'>
+    </td>
+    <!-- //? Chamando a action de excluir o usuário -->
+    <td>
+        <a href='index.php&class=PessoaList&method=delete&id={id}'>
+            <img src='img/delete.svg' style='width:17px'>
+    </td>
+    <td> {id} </td>
+    <td> {nome} </td>
+    <td> {endereco} </td>
+    <td> {bairro} </td>
+    <td> {telefone} </td>
+    <td> {email} </td>
+</tr>

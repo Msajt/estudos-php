@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="css/style-list.css">
+    <title>Listagem de pessoas</title>
+</head>
+
+<body>
+    <!-- Gerando tabela de dados -->
+    <table border=1>
+        <!-- Cabeçalho da tabela -->
+        <thead>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Id</td>
+                <td>Nome</td>
+                <td>Endereço</td>
+                <td>Bairro</td>
+                <td>Telefone</td>
+                <td>Email</td>
+            </tr>
+        </thead>
+        <!-- O corpo será gerado pelo programa pelo bd -->
+        <tbody>
+            <!-- Itens da tabela -->
+            {items}
+        </tbody>
+    </table>
+    <button onclick="window.location='index.php?class=PessoaForm'">
+        <img src="img/insert.svg" style="width:17px">Inserir
+    </button>
+</body>
+
+</html>
