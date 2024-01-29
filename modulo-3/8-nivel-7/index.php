@@ -7,7 +7,7 @@ spl_autoload_register(function ($class) {
     }
 });
 
-$classe = isset($_REQUEST['class']) ? $_REQUEST['class'] : null;;
+$classe = isset($_REQUEST['class']) ? $_REQUEST['class'] : null;
 $metodo = isset($_REQUEST['method']) ? $_REQUEST['method'] : null;
 
 if (class_exists($classe)) {
